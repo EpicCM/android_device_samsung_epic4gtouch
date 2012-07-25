@@ -53,6 +53,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	device/samsung/epic4gtouch/dhd.ko:root/lib/modules/dhd.ko
+	device/samsung/epic4gtouch/cyasswitch.ko:root/lib/modules/cyasswitch.ko
+	device/samsung/epic4gtouch/scsi_wait_scan.ko:root/lib/modules/scsi_wait_scan.ko
+	device/samsung/epic4gtouch/j4fs.ko:root/lib/modules/j4fs.ko
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product-if-exists, vendor/samsung/epic4gtouch/epic4gtouch-vendor.mk)
